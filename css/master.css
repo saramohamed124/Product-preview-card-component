@@ -1,0 +1,177 @@
+/* Start variable */
+:root {
+    --background-color: hsl(30, 38%, 92%);
+    --main-color: hsl(158, 37%, 37%);
+    --attribution-color: hsl(228, 45%, 44%);
+    --text-color: hsl(228, 12%, 48%);
+}
+
+/* End variable */
+/* Start Global Rules */
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    background-color: var(--background-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    max-height: 100%;
+    margin: 100px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+@media(max-width: 767px) {
+    .container {
+        flex-direction: column;
+        max-width: 375px;
+        height: 670px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+/* End Global Rules */
+
+/* Start Image Section */
+
+@media(max-width: 767px) {
+    .image {
+        background-size: cover;
+        background-image: url(../images/image-product-mobile.jpg);
+        max-height: 100%;
+        flex-basis: 45%;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+    }
+
+}
+
+@media(min-width: 767px) {
+    .image {
+        background-size: cover;
+        background-image: url(../images/image-product-desktop.jpg);
+        max-height: 100%;
+        flex-basis: 50%;
+        border-top-left-radius: 2%;
+        border-bottom-left-radius: 2%;
+
+    }
+}
+
+.offer-content {
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+    max-height: 100%;
+    flex-basis: 50%;
+}
+
+.offer-content h1 {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 100;
+}
+
+@media(max-width: 767px) {
+    .offer-content h1 {
+        font-size: 14px;
+    }
+}
+
+.offer-content h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1;
+}
+
+@media(max-width: 767px) {
+    .offer-content h2 {
+        font-size: 30px !important;
+    }
+}
+
+.offer-content p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.offer-content span {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    position: relative;
+    color: var(--main-color);
+}
+
+.offer-content span::before {
+    font-family: 'Montserrat', sans-serif;
+    content: "$169.99";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50%;
+    font-size: 13px;
+    color: var(--text-color);
+    font-weight: lighter !important;
+    text-decoration: line-through;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.offer-content button {
+    display: block;
+    margin-top: 15px;
+    padding: 13px 0;
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--background-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+}
+
+.offer-content button i {
+    font-weight: 900;
+}
+
+.offer-content button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--attribution-color);
+}
