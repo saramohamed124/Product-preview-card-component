@@ -167,11 +167,3 @@ body {
     border: 1px solid var(--main-color);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: var(--attribution-color);
-}
