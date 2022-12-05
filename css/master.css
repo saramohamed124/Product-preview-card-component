@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
 }
 
-.container {
+.preview-container {
     display: flex;
     flex-direction: row;
     width: 500px;
@@ -39,7 +39,7 @@ body {
 }
 
 @media(max-width: 767px) {
-    .container {
+    .preview-container {
         flex-direction: column;
         max-width: 375px;
         height: 670px;
@@ -47,7 +47,7 @@ body {
 }
 
 @media(min-width: 1440px) {
-    .container {
+    .preview-container {
         max-width: 1440px;
     }
 }
