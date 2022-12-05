@@ -24,7 +24,7 @@ body {
     flex-direction: row;
     width: 500px;
     max-height: 100%;
-    margin: 100px auto;
+    margin: 200px auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 2%;
     -webkit-border-radius: 2%;
