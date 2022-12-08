@@ -19,12 +19,12 @@ body {
     box-sizing: border-box;
 }
 
-.preview{
+.main{
     display: flex;
     flex-direction: row;
     width: 500px;
     max-height: 100%;
-    margin: 150px auto;
+    margin: 180px auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 2%;
     -webkit-border-radius: 2%;
@@ -39,7 +39,7 @@ body {
 }
 
 @media(max-width: 767px) {
-   .preview {
+   .main{
         flex-direction: column;
         max-width: 375px;
         height: 670px;
@@ -47,7 +47,7 @@ body {
 }
 
 @media(min-width: 1440px) {
-    .preview{
+    .main{
         max-width: 1440px;
     }
 }
